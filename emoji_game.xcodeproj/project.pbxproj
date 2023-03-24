@@ -11,6 +11,7 @@
 		8D1DFF0729C95279000644E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0629C95279000644E8 /* ContentView.swift */; };
 		8D1DFF0929C9527A000644E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0829C9527A000644E8 /* Assets.xcassets */; };
 		8D1DFF0C29C9527A000644E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0B29C9527A000644E8 /* Preview Assets.xcassets */; };
+		8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F5D29CD62F20061B833 /* CameraService.swift */; };
 		F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138029CD55BC0048F803 /* EmojiPicker */; };
 		F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138329CD584A0048F803 /* ISEmojiView */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		8D1DFF0629C95279000644E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D1DFF0829C9527A000644E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1DFF0B29C9527A000644E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D645F5D29CD62F20061B833 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		8D645F5C29CD62570061B833 /* page_3 */ = {
 			isa = PBXGroup;
 			children = (
+				8D645F5D29CD62F20061B833 /* CameraService.swift */,
 			);
 			path = page_3;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				8D1DFF0729C95279000644E8 /* ContentView.swift in Sources */,
 				8D1DFF0529C95279000644E8 /* emoji_gameApp.swift in Sources */,
+				8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
