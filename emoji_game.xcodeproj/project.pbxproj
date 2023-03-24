@@ -11,6 +11,8 @@
 		8D1DFF0729C95279000644E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0629C95279000644E8 /* ContentView.swift */; };
 		8D1DFF0929C9527A000644E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0829C9527A000644E8 /* Assets.xcassets */; };
 		8D1DFF0C29C9527A000644E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0B29C9527A000644E8 /* Preview Assets.xcassets */; };
+		F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138029CD55BC0048F803 /* EmojiPicker */; };
+		F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138329CD584A0048F803 /* ISEmojiView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */,
+				F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = emoji_game;
+			packageProductDependencies = (
+				F1FA138029CD55BC0048F803 /* EmojiPicker */,
+				F1FA138329CD584A0048F803 /* ISEmojiView */,
+			);
 			productName = emoji_game;
 			productReference = 8D1DFF0129C95279000644E8 /* emoji_game.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 8D1DFEF829C95279000644E8;
+			packageReferences = (
+				F1FA137F29CD55BB0048F803 /* XCRemoteSwiftPackageReference "EmojiPicker" */,
+				F1FA138229CD584A0048F803 /* XCRemoteSwiftPackageReference "ISEmojiView" */,
+			);
 			productRefGroup = 8D1DFF0229C95279000644E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +351,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1FA137F29CD55BB0048F803 /* XCRemoteSwiftPackageReference "EmojiPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kelvas09/EmojiPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F1FA138229CD584A0048F803 /* XCRemoteSwiftPackageReference "ISEmojiView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/isaced/ISEmojiView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1FA138029CD55BC0048F803 /* EmojiPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1FA137F29CD55BB0048F803 /* XCRemoteSwiftPackageReference "EmojiPicker" */;
+			productName = EmojiPicker;
+		};
+		F1FA138329CD584A0048F803 /* ISEmojiView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1FA138229CD584A0048F803 /* XCRemoteSwiftPackageReference "ISEmojiView" */;
+			productName = ISEmojiView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D1DFEF929C95279000644E8 /* Project object */;
 }
