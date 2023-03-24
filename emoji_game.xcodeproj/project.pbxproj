@@ -12,6 +12,8 @@
 		8D1DFF0929C9527A000644E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0829C9527A000644E8 /* Assets.xcassets */; };
 		8D1DFF0C29C9527A000644E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0B29C9527A000644E8 /* Preview Assets.xcassets */; };
 		8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F5D29CD62F20061B833 /* CameraService.swift */; };
+		8D645F6029CD63440061B833 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F5F29CD63440061B833 /* CameraView.swift */; };
+		8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F6129CD635C0061B833 /* CustomCameraView.swift */; };
 		F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138029CD55BC0048F803 /* EmojiPicker */; };
 		F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138329CD584A0048F803 /* ISEmojiView */; };
 /* End PBXBuildFile section */
@@ -23,6 +25,8 @@
 		8D1DFF0829C9527A000644E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1DFF0B29C9527A000644E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D645F5D29CD62F20061B833 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		8D645F5F29CD63440061B833 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8D645F6129CD635C0061B833 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				8D645F5D29CD62F20061B833 /* CameraService.swift */,
+				8D645F6129CD635C0061B833 /* CustomCameraView.swift */,
+				8D645F5F29CD63440061B833 /* CameraView.swift */,
 			);
 			path = page_3;
 			sourceTree = "<group>";
@@ -170,7 +176,9 @@
 			files = (
 				8D1DFF0729C95279000644E8 /* ContentView.swift in Sources */,
 				8D1DFF0529C95279000644E8 /* emoji_gameApp.swift in Sources */,
+				8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */,
 				8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */,
+				8D645F6029CD63440061B833 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
