@@ -55,8 +55,8 @@
 		8D1DFF0329C95279000644E8 /* emoji_game */ = {
 			isa = PBXGroup;
 			children = (
+				F1FA138529CD60710048F803 /* emoji_page */,
 				8D1DFF0429C95279000644E8 /* emoji_gameApp.swift */,
-				8D1DFF0629C95279000644E8 /* ContentView.swift */,
 				8D1DFF0829C9527A000644E8 /* Assets.xcassets */,
 				8D1DFF0A29C9527A000644E8 /* Preview Content */,
 			);
@@ -69,6 +69,14 @@
 				8D1DFF0B29C9527A000644E8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1FA138529CD60710048F803 /* emoji_page */ = {
+			isa = PBXGroup;
+			children = (
+				8D1DFF0629C95279000644E8 /* ContentView.swift */,
+			);
+			path = emoji_page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
