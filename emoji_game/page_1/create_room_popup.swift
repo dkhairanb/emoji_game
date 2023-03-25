@@ -80,18 +80,21 @@ struct create_room_popup: View {
                 Button {
                     
                 } label: {
-                    HStack{
-                        Image(systemName: "play.fill")
-                        Text("Play")
-                            .font(.system(size: 17))
-                        
-                    }.padding()
-                        .frame(width: 255, height: 50)
-                        .background(Color("blue"))
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                        .padding(.top, 30)
-                        .buttonStyle(.bordered)
+                    NavigationLink(destination: EmojiView())
+                    {
+                        HStack{
+                            Image(systemName: "play.fill")
+                            Text("Play")
+                                .font(.system(size: 17))
+                            
+                        }.padding()
+                            .frame(width: 255, height: 50)
+                            .background(Color("blue"))
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                            .padding(.top, 30)
+                            .buttonStyle(.bordered)
+                    }
                 }
             }
         }

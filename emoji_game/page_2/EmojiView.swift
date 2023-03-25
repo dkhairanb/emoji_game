@@ -71,11 +71,14 @@ struct EmojiView: View {
             
             if(timeRemaining == 0){
                 Button{
-                    timeRemaining = 10
-                    self.topic.shuffle()
+//                    timeRemaining = 10
+//                    self.topic.shuffle()
                 } label: {
-                    Text("Next").frame(width: 350, height: 50).bold()
-                }.background(Color("secondaryColor")).foregroundColor(.white).cornerRadius(8)
+                    NavigationLink(destination: ContentView())
+                    {
+                        Text("Next").frame(width: 350, height: 50).bold()
+                    }.background(Color("secondaryColor")).foregroundColor(.white).cornerRadius(8)
+                    }
             } else {
                 Button {
                     displayEmojiPicker = true
