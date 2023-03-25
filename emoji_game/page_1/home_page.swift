@@ -35,7 +35,8 @@ struct home_page: View {
 //                        print("test")
                         isOverlay.toggle()
                     } label: {
-                        Text("Create Room")
+                        Text("Play")
+                            .font(.title)
                             .font(.system(size: 17))
                             .frame(width: 350, height: 50)
                     }
@@ -45,36 +46,12 @@ struct home_page: View {
                     .padding(.top, 30)
                    
                     
-                    Button {
-                        print("join")
-                        isOverlay2.toggle()
-                    } label: {
-                        Text("Join Room")
-                            .font(.system(size: 17))
-                            .frame(width: 350, height: 50)
-                    }
-                    .background(.white)
-                    .foregroundColor(Color("blue"))
-                    .cornerRadius(8)
-                    
-                    // privacy policy
-    //                Text("Lorem ipsum dot asda qwejqweiasd")
-//                        .font(.system(size: 12))
-//                        .padding(EdgeInsets(top: 15, leading: 15, bottom: 15, trailing: 15))
-//                        .foregroundColor(.white)
-                    
                 }
                 .padding()
             }
             .overlay {
                 if isOverlay {
                     create_room_popup()
-                }
-            }
-            
-            .overlay {
-                if isOverlay2 {
-                    join_room_popup()
                 }
             }
         }

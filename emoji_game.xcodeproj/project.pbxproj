@@ -16,8 +16,6 @@
 		8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F6129CD635C0061B833 /* CustomCameraView.swift */; };
 		8D645F6429CD63CE0061B833 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F6329CD63CE0061B833 /* ContentView.swift */; };
 		BCAEA79B29CECB4A005ECBDA /* home_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA79A29CECB4A005ECBDA /* home_page.swift */; };
-		BCAEA79D29CECBE6005ECBDA /* join_room_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA79C29CECBE6005ECBDA /* join_room_popup.swift */; };
-		BCAEA79F29CECBFD005ECBDA /* waiting_room_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA79E29CECBFD005ECBDA /* waiting_room_popup.swift */; };
 		BCAEA7A129CECC22005ECBDA /* create_room_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */; };
 		F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138029CD55BC0048F803 /* EmojiPicker */; };
 		F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138329CD584A0048F803 /* ISEmojiView */; };
@@ -34,8 +32,6 @@
 		8D645F6129CD635C0061B833 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		8D645F6329CD63CE0061B833 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCAEA79A29CECB4A005ECBDA /* home_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_page.swift; sourceTree = "<group>"; };
-		BCAEA79C29CECBE6005ECBDA /* join_room_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = join_room_popup.swift; sourceTree = "<group>"; };
-		BCAEA79E29CECBFD005ECBDA /* waiting_room_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waiting_room_popup.swift; sourceTree = "<group>"; };
 		BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = create_room_popup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				BCAEA79729CECAD4005ECBDA /* page_1 */,
-				8D645F5C29CD62570061B833 /* page_3 */,
 				F1FA138529CD60710048F803 /* page_2 */,
+				8D645F5C29CD62570061B833 /* page_3 */,
 				8D1DFF0429C95279000644E8 /* emoji_gameApp.swift */,
 				8D1DFF0829C9527A000644E8 /* Assets.xcassets */,
 				8D1DFF0A29C9527A000644E8 /* Preview Content */,
@@ -105,8 +101,6 @@
 			children = (
 				BCAEA79A29CECB4A005ECBDA /* home_page.swift */,
 				BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */,
-				BCAEA79C29CECBE6005ECBDA /* join_room_popup.swift */,
-				BCAEA79E29CECBFD005ECBDA /* waiting_room_popup.swift */,
 			);
 			path = page_1;
 			sourceTree = "<group>";
@@ -197,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCAEA79F29CECBFD005ECBDA /* waiting_room_popup.swift in Sources */,
 				BCAEA79B29CECB4A005ECBDA /* home_page.swift in Sources */,
 				8D1DFF0729C95279000644E8 /* EmojiView.swift in Sources */,
 				8D1DFF0529C95279000644E8 /* emoji_gameApp.swift in Sources */,
@@ -206,7 +199,6 @@
 				8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */,
 				8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */,
 				8D645F6029CD63440061B833 /* CameraView.swift in Sources */,
-				BCAEA79D29CECBE6005ECBDA /* join_room_popup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
