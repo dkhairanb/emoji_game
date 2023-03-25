@@ -68,13 +68,13 @@ struct home_page: View {
             }
             .overlay {
                 if isOverlay {
-                    Pop_Up()
+                    create_room_popup()
                 }
             }
             
             .overlay {
                 if isOverlay2 {
-                    Pop_Up_2()
+                    join_room_popup()
                 }
             }
         }

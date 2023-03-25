@@ -19,7 +19,7 @@ func RandomCode() -> NSString{
     return randomString
 };
 
-struct Pop_Up: View {
+struct create_room_popup: View {
     @State public var participantCount : Int = 0
     @State private var textFieldContent = ""
     
@@ -102,6 +102,6 @@ struct Pop_Up: View {
 
 struct Pop_Up_Previews: PreviewProvider {
     static var previews: some View {
-        Pop_Up()
+        create_room_popup()
     }
 }

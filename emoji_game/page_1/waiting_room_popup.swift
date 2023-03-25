@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Pop_Up_3: View {
+struct waiting_room_popup: View {
     var body: some View {
         
         // Pop Up BG
@@ -30,8 +30,8 @@ struct Pop_Up_3: View {
         }
     }
 }
-struct Pop_Up_3_Previews: PreviewProvider {
+struct waiting_room_popup_Previews: PreviewProvider {
     static var previews: some View {
-        Pop_Up_3()
+        waiting_room_popup()
     }
 }
