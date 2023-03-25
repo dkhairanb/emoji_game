@@ -26,7 +26,7 @@ func showEmoji(timeRemaining : Int, emoji: String) -> Text{
     }
 }
 
-struct ContentView: View {
+struct EmojiView: View {
     
     @State var selectedEmoji: Emoji?
 
@@ -100,8 +100,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        EmojiView()
     }
 }
