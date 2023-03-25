@@ -11,7 +11,7 @@ import SwiftUI
 struct emoji_gameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            home_page()
         }
     }
 }
