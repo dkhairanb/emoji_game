@@ -73,7 +73,7 @@
 			children = (
 				BCAEA79729CECAD4005ECBDA /* page_1 */,
 				8D645F5C29CD62570061B833 /* page_3 */,
-				F1FA138529CD60710048F803 /* emoji_page */,
+				F1FA138529CD60710048F803 /* page_2 */,
 				8D1DFF0429C95279000644E8 /* emoji_gameApp.swift */,
 				8D1DFF0829C9527A000644E8 /* Assets.xcassets */,
 				8D1DFF0A29C9527A000644E8 /* Preview Content */,
@@ -111,12 +111,12 @@
 			path = page_1;
 			sourceTree = "<group>";
 		};
-		F1FA138529CD60710048F803 /* emoji_page */ = {
+		F1FA138529CD60710048F803 /* page_2 */ = {
 			isa = PBXGroup;
 			children = (
 				8D1DFF0629C95279000644E8 /* ContentView.swift */,
 			);
-			path = emoji_page;
+			path = page_2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
