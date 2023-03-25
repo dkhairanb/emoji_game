@@ -16,7 +16,7 @@
 		8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F6129CD635C0061B833 /* CustomCameraView.swift */; };
 		8D645F6429CD63CE0061B833 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D645F6329CD63CE0061B833 /* ContentView.swift */; };
 		BCAEA79B29CECB4A005ECBDA /* home_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA79A29CECB4A005ECBDA /* home_page.swift */; };
-		BCAEA7A129CECC22005ECBDA /* create_room_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */; };
+		BCAEA7A129CECC22005ECBDA /* lobby_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA7A029CECC22005ECBDA /* lobby_popup.swift */; };
 		F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138029CD55BC0048F803 /* EmojiPicker */; };
 		F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138329CD584A0048F803 /* ISEmojiView */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,7 @@
 		8D645F6129CD635C0061B833 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		8D645F6329CD63CE0061B833 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCAEA79A29CECB4A005ECBDA /* home_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_page.swift; sourceTree = "<group>"; };
-		BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = create_room_popup.swift; sourceTree = "<group>"; };
+		BCAEA7A029CECC22005ECBDA /* lobby_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lobby_popup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BCAEA79A29CECB4A005ECBDA /* home_page.swift */,
-				BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */,
+				BCAEA7A029CECC22005ECBDA /* lobby_popup.swift */,
 			);
 			path = page_1;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 				8D1DFF0729C95279000644E8 /* EmojiView.swift in Sources */,
 				8D1DFF0529C95279000644E8 /* emoji_gameApp.swift in Sources */,
 				8D645F6429CD63CE0061B833 /* ContentView.swift in Sources */,
-				BCAEA7A129CECC22005ECBDA /* create_room_popup.swift in Sources */,
+				BCAEA7A129CECC22005ECBDA /* lobby_popup.swift in Sources */,
 				8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */,
 				8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */,
 				8D645F6029CD63440061B833 /* CameraView.swift in Sources */,

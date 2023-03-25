@@ -45,13 +45,13 @@ struct home_page: View {
                     .cornerRadius(8)
                     .padding(.top, 30)
                    
-                    
+                    //
                 }
                 .padding()
             }
             .overlay {
                 if isOverlay {
-                    create_room_popup()
+                    lobby_popup()
                 }
             }
         }
