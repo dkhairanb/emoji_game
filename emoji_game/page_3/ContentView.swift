@@ -76,7 +76,7 @@ struct ContentView: View {
                                 Image(systemName: "camera.fill")
                                     .font(.largeTitle)
                                     .padding()
-                                    .background(Color("blue"))
+                                    .background(Color("primaryColor"))
                                     .foregroundColor(.white)
                                     .clipShape(Circle())
                             })

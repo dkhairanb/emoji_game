@@ -40,7 +40,7 @@ struct lobby_popup: View {
                         Image(systemName: "minus")
                         
                             .frame(width: 50, height: 50)
-                            .background(Color("blue"))
+                            .background(Color("primaryColor"))
                             .foregroundColor(Color.white)
                             .clipShape(Circle())
                             .padding(20)
@@ -54,7 +54,7 @@ struct lobby_popup: View {
                             .cornerRadius(8)
                         Text("\(participantCount)")
                             .font(.system(size: 55, weight: .bold))
-                            .foregroundColor(Color("blue"))
+                            .foregroundColor(Color("primaryColor"))
                     }
                     
                    
@@ -69,7 +69,7 @@ struct lobby_popup: View {
                         Image(systemName: "plus")
                         
                             .frame(width: 50, height: 50)
-                            .background(Color("blue"))
+                            .background(Color("primaryColor"))
                             .foregroundColor(Color.white)
                             .clipShape(Circle())
                             .padding(20)
@@ -101,7 +101,7 @@ struct lobby_popup: View {
                             
                         }.padding()
                             .frame(width: 255, height: 50)
-                            .background(Color("blue"))
+                            .background(Color("primaryColor"))
                             .foregroundColor(.white)
                             .cornerRadius(8)
                             .padding(.top, 30)

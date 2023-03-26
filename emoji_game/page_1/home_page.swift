@@ -35,13 +35,13 @@ struct home_page: View {
 //                        print("test")
                         isOverlay.toggle()
                     } label: {
-                        Text("Play")
+                        Text("Start")
                             .font(.title)
-                            .font(.system(size: 17))
+                            .font(.system(size: 14))
                             .frame(width: 350, height: 50)
                     }
-                    .background(.white)
-                    .foregroundColor(Color("blue"))
+                    .background(Color("primaryColor"))
+                    .foregroundColor(Color(.white))
                     .cornerRadius(8)
                     .padding(.top, 30)
                    

@@ -49,100 +49,107 @@ struct EmojiView: View {
     ]
     
     var body: some View {
-        VStack {
-            if(index < name.count) {
-                Spacer()
-                Text("Create Your Own Emoji About This Topic🥳").padding()
-            } else {
-                Text("Tell Us About Your Emoji😝").padding()
-            }
+        ZStack{
+            Image("BackgroundGame")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .opacity(1.0)
             
-            
-            
-            Text(topics).onAppear{
-                topics = topic.shuffled().first ?? ""
-            }.foregroundColor(.white).font(.system(size: 38, design: .serif)).multilineTextAlignment(.center).bold().fixedSize(horizontal: false, vertical: true).scaledToFit().padding().frame(width: 286, height: 168).background(Color("primaryColor")).cornerRadius(8).shadow( color: Color("shadowColor"), radius: 8)
-            
-            if(index > name.count-1){
-                if(indexSpeak == 0){
-                    countdownTimer(timeRemaining: timeRemaining).padding(.horizontal, 40).padding(.vertical, 5).font(.system(size: 30)).bold().background(Color("boxColor")).cornerRadius(10).padding()
+            VStack {
+                if(index < name.count) {
+                    Text("Create Your Own Emoji About This Topic🥳").foregroundColor(Color("shadowColor")).padding(.top, 90)
                 } else {
-                    countdownTimer(timeRemaining: timeRemainingTopic).padding(.horizontal, 40).padding(.vertical, 5).font(.system(size: 30)).bold().background(Color("boxColor")).cornerRadius(10).padding()
+                    Text("Tell Us About Your Emoji😝").foregroundColor(Color("shadowColor")).padding(.top, 90)
                 }
-                
-                ScrollView{
-                    LazyVGrid(columns: adaptiveColumns, spacing: 10){
-                        ForEach(1..<name.count+1) { number in
-                            ZStack {
-                                VStack{
-                                    if(timeRemaining == 0 && number == indexSpeak) {
-                                        showEmoji(timeRemaining: timeRemaining, emoji: "\(answer[number-1])").padding().frame(width: 110, height: 110).background(Rectangle().fill(Color("primaryColor")).cornerRadius(8))
-                                    } else {
-                                        showEmoji(timeRemaining: timeRemaining, emoji: "\(answer[number-1])").padding().frame(width: 110, height: 110).background(Rectangle().fill(Color("secondaryColor")).cornerRadius(8))
+
+
+                Text(topics).onAppear{
+                    topics = topic.shuffled().first ?? ""
+                }.padding(.top, 40).foregroundColor(Color("primaryColor")).font(.system(size: 38)).multilineTextAlignment(.center).bold().fixedSize(horizontal: false, vertical: true).scaledToFit().padding()
+
+                if(index > name.count-1){
+                    if(indexSpeak == 0){
+                        countdownTimer(timeRemaining: timeRemaining).padding(.horizontal, 40).padding(.vertical, 5).font(.system(size: 30)).bold().background(Color(.white)).cornerRadius(30).shadow(color: Color("shadow"), radius: 10).padding(.top, 40)
+                    } else {
+                        countdownTimer(timeRemaining: timeRemainingTopic).padding(.horizontal, 40).padding(.vertical, 5).font(.system(size: 30)).bold().background(Color(.white)).cornerRadius(30).shadow(color: Color("shadow"), radius: 10).padding(.top, 40)
+                    }
+                    
+                    ScrollView{
+                        LazyVGrid(columns: adaptiveColumns, spacing: 10){
+                            ForEach(1..<name.count+1) { number in
+                                ZStack {
+                                    VStack{
+                                        if(timeRemaining == 0 && number == indexSpeak) {
+                                            showEmoji(timeRemaining: timeRemaining, emoji: "\(answer[number-1])").padding().frame(width: 110, height: 110).background(Rectangle().fill(Color("shadow")).cornerRadius(8))
+                                        } else {
+                                            showEmoji(timeRemaining: timeRemaining, emoji: "\(answer[number-1])").padding().frame(width: 110, height: 110).background(Rectangle().fill(Color("secondaryColor")).cornerRadius(8))
+                                        }
+                                        Text("\(name[number-1])")
                                     }
-                                    Text("\(name[number-1])")
                                 }
                             }
                         }
-                    }
-                }.padding(.horizontal, 40).padding(.top, 20)
-            } else {
-                Text("\(name[index])'s Turn").padding()
-            }
-            
-            Spacer()
-            if(index < name.count) {
-                Button {
-                    displayEmojiPicker = true
-                } label: {
-                    Text("Select emoji").padding(.bottom, 20)
+                    }.padding(.horizontal, 40).padding(.top, 60)
+                } else {
+                    Text("\(name[index])'s Turn").foregroundColor(Color("primaryColor")).padding()
                 }
-            } else if (timeRemaining == 0 && indexSpeak < name.count){
-                Button {
-                    timeRemainingTopic = 59
-                    indexSpeak = indexSpeak + 1
-                } label: {
-                    Text("Pass").padding(.bottom, 20)
-                }
-            }
-            
-            if(index < name.count) {
-                Button{
-                    answer.append(selectedEmoji?.value ?? "")
-                    index < name.count ? index = index + 1 : ()
-                    index == name.count ? timeRemaining = 5 : ()
-                    print(answer)
-                } label: {
-                    Text("Pass").frame(width: 350, height: 50).bold()
-                }.background(Color("secondaryColor")).foregroundColor(.white).cornerRadius(8)
-            } else {
-                if(indexSpeak >= name.count){
-                    Button{
-                        index = index + 1
+                
+                Spacer()
+                
+                if(index < name.count) {
+                    Button {
+                        displayEmojiPicker = true
                     } label: {
-                        NavigationLink(destination: ContentView(emoji : answer))
-                        {
-                            Text("Next").frame(width: 350, height: 50).bold()
-                        }.background(Color("secondaryColor")).foregroundColor(.white).cornerRadius(8)
+                        Text("Select emoji").padding(.bottom, 20)
+                    }
+                } else if (timeRemaining == 0 && indexSpeak < name.count){
+                    Button {
+                        timeRemainingTopic = 59
+                        indexSpeak = indexSpeak + 1
+                    } label: {
+                        Text("Next").frame(width: 350, height: 50).bold().background(Color("primaryColor")).foregroundColor(.white).cornerRadius(8).padding(.bottom, 80)
                     }
                 }
+                
+                if(index < name.count) {
+                    Button{
+                        answer.append(selectedEmoji?.value ?? "")
+                        index < name.count ? index = index + 1 : ()
+                        index == name.count ? timeRemaining = 5 : ()
+                        print(answer)
+                    } label: {
+                        Text("Next").frame(width: 350, height: 50).bold()
+                    }.background(Color("secondaryColor")).foregroundColor(.white).cornerRadius(8).padding(.bottom, 80)
+                } else {
+                    if(indexSpeak >= name.count){
+                        Button{
+                            index = index + 1
+                        } label: {
+                            NavigationLink(destination: ContentView(emoji : answer))
+                            {
+                                Text("Next").frame(width: 350, height: 50).bold()
+                            }.background(Color("primaryColor")).foregroundColor(.white).cornerRadius(8).padding(.bottom, 80)
+                        }
+                    }
+                }
+                
+            }.onReceive(timer) { time in
+                if timeRemaining > 0 {
+                    timeRemaining -= 1
+                }
             }
-            
-        }.onReceive(timer) { time in
-            if timeRemaining > 0 {
-                timeRemaining -= 1
+            .sheet(isPresented: $displayEmojiPicker) {
+                NavigationView {
+                    EmojiPickerView(selectedEmoji: $selectedEmoji, selectedColor: .gray)
+                        .navigationTitle("Emojis")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
             }
-        }
-        .sheet(isPresented: $displayEmojiPicker) {
-            NavigationView {
-                EmojiPickerView(selectedEmoji: $selectedEmoji, selectedColor: .gray)
-                    .navigationTitle("Emojis")
-                    .navigationBarTitleDisplayMode(.inline)
-            }
-        }
-        .onReceive(timer) { time in
-            if timeRemainingTopic > 0 {
-                timeRemainingTopic -= 1
+            .onReceive(timer) { time in
+                if timeRemainingTopic > 0 {
+                    timeRemainingTopic -= 1
+                }
             }
         }
     }
