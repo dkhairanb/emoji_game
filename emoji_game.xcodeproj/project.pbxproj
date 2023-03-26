@@ -21,9 +21,13 @@
 		BCAEA7A129CECC22005ECBDA /* create_room_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */; };
 		F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138029CD55BC0048F803 /* EmojiPicker */; };
 		F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA138329CD584A0048F803 /* ISEmojiView */; };
+		F1FA138F29CEDFF70048F803 /* JobConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA138E29CEDFF70048F803 /* JobConnectionManager.swift */; };
+		F1FA139829D05A2C0048F803 /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F1FA139729D05A2C0048F803 /* MCEmojiPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44A4A631B2D6660794D916F3 /* Pods_emoji_game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emoji_game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F5E1489997D6194D9610976 /* Pods-emoji_game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emoji_game.debug.xcconfig"; path = "Target Support Files/Pods-emoji_game/Pods-emoji_game.debug.xcconfig"; sourceTree = "<group>"; };
 		8D1DFF0129C95279000644E8 /* emoji_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emoji_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1DFF0429C95279000644E8 /* emoji_gameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emoji_gameApp.swift; sourceTree = "<group>"; };
 		8D1DFF0629C95279000644E8 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
@@ -33,10 +37,12 @@
 		8D645F5F29CD63440061B833 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		8D645F6129CD635C0061B833 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		8D645F6329CD63CE0061B833 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2BE7493EF405974E731645F /* Pods-emoji_game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emoji_game.release.xcconfig"; path = "Target Support Files/Pods-emoji_game/Pods-emoji_game.release.xcconfig"; sourceTree = "<group>"; };
 		BCAEA79A29CECB4A005ECBDA /* home_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_page.swift; sourceTree = "<group>"; };
 		BCAEA79C29CECBE6005ECBDA /* join_room_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = join_room_popup.swift; sourceTree = "<group>"; };
 		BCAEA79E29CECBFD005ECBDA /* waiting_room_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waiting_room_popup.swift; sourceTree = "<group>"; };
 		BCAEA7A029CECC22005ECBDA /* create_room_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = create_room_popup.swift; sourceTree = "<group>"; };
+		F1FA138E29CEDFF70048F803 /* JobConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +52,29 @@
 			files = (
 				F1FA138429CD584A0048F803 /* ISEmojiView in Frameworks */,
 				F1FA138129CD55BC0048F803 /* EmojiPicker in Frameworks */,
+				F1FA139829D05A2C0048F803 /* MCEmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13E0DACD3E051E4224C87B26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F5E1489997D6194D9610976 /* Pods-emoji_game.debug.xcconfig */,
+				A2BE7493EF405974E731645F /* Pods-emoji_game.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D1DFEF829C95279000644E8 = {
 			isa = PBXGroup;
 			children = (
 				8D1DFF0329C95279000644E8 /* emoji_game */,
 				8D1DFF0229C95279000644E8 /* Products */,
+				13E0DACD3E051E4224C87B26 /* Pods */,
+				EF612C6302AC118F6FC399A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +95,7 @@
 				8D1DFF0429C95279000644E8 /* emoji_gameApp.swift */,
 				8D1DFF0829C9527A000644E8 /* Assets.xcassets */,
 				8D1DFF0A29C9527A000644E8 /* Preview Content */,
+				F1FA138E29CEDFF70048F803 /* JobConnectionManager.swift */,
 			);
 			path = emoji_game;
 			sourceTree = "<group>";
@@ -111,6 +130,14 @@
 			path = page_1;
 			sourceTree = "<group>";
 		};
+		EF612C6302AC118F6FC399A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44A4A631B2D6660794D916F3 /* Pods_emoji_game.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1FA138529CD60710048F803 /* page_2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D1DFF0F29C9527A000644E8 /* Build configuration list for PBXNativeTarget "emoji_game" */;
 			buildPhases = (
+				49F9FB8E8E898FE536FF963F /* [CP] Check Pods Manifest.lock */,
 				8D1DFEFD29C95279000644E8 /* Sources */,
 				8D1DFEFE29C95279000644E8 /* Frameworks */,
 				8D1DFEFF29C95279000644E8 /* Resources */,
@@ -138,6 +166,7 @@
 			packageProductDependencies = (
 				F1FA138029CD55BC0048F803 /* EmojiPicker */,
 				F1FA138329CD584A0048F803 /* ISEmojiView */,
+				F1FA139729D05A2C0048F803 /* MCEmojiPicker */,
 			);
 			productName = emoji_game;
 			productReference = 8D1DFF0129C95279000644E8 /* emoji_game.app */;
@@ -170,6 +199,7 @@
 			packageReferences = (
 				F1FA137F29CD55BB0048F803 /* XCRemoteSwiftPackageReference "EmojiPicker" */,
 				F1FA138229CD584A0048F803 /* XCRemoteSwiftPackageReference "ISEmojiView" */,
+				F1FA139629D05A2C0048F803 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */,
 			);
 			productRefGroup = 8D1DFF0229C95279000644E8 /* Products */;
 			projectDirPath = "";
@@ -192,6 +222,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49F9FB8E8E898FE536FF963F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-emoji_game-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D1DFEFD29C95279000644E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,6 +258,7 @@
 				8D1DFF0529C95279000644E8 /* emoji_gameApp.swift in Sources */,
 				8D645F6429CD63CE0061B833 /* ContentView.swift in Sources */,
 				BCAEA7A129CECC22005ECBDA /* create_room_popup.swift in Sources */,
+				F1FA138F29CEDFF70048F803 /* JobConnectionManager.swift in Sources */,
 				8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */,
 				8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */,
 				8D645F6029CD63440061B833 /* CameraView.swift in Sources */,
@@ -329,6 +385,7 @@
 		};
 		8D1DFF1029C9527A000644E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5E1489997D6194D9610976 /* Pods-emoji_game.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +415,7 @@
 		};
 		8D1DFF1129C9527A000644E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BE7493EF405974E731645F /* Pods-emoji_game.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,6 +483,14 @@
 				minimumVersion = 0.3.4;
 			};
 		};
+		F1FA139629D05A2C0048F803 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/izyumkin/MCEmojiPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -437,6 +503,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1FA138229CD584A0048F803 /* XCRemoteSwiftPackageReference "ISEmojiView" */;
 			productName = ISEmojiView;
+		};
+		F1FA139729D05A2C0048F803 /* MCEmojiPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1FA139629D05A2C0048F803 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */;
+			productName = MCEmojiPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
