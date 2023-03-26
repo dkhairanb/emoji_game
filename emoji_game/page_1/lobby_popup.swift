@@ -9,12 +9,7 @@ import SwiftUI
 
 struct lobby_popup: View {
     @State public var participantCount : Int = 2
-    @State private var textFieldContent = ""
-    @State public var player1Name = ""
-    @State public var player2Name = ""
-    @State public var player3Name = ""
-    @State public var player4Name = ""
-    
+    @State private var playerNames = [String](repeating: "", count: 4)
 
     
     var body: some View {
@@ -62,11 +57,14 @@ struct lobby_popup: View {
                             .foregroundColor(Color("blue"))
                     }
                     
+                   
+                    
                     //add button
                     Button{
                         if participantCount < 4{
                             participantCount += 1
                         }
+                        print(participantCount)
                     } label: {
                         Image(systemName: "plus")
                         
@@ -78,30 +76,23 @@ struct lobby_popup: View {
                     }
                 }
 
-                
-//                Text("Please Enter Your Name")
-//                    .font(.system(size: 16))
-//                    .foregroundColor(Color.black)
-//                    .padding(.top, 100)
-//
-//                TextField("Enter Your Name", text: $textFieldContent)
-//                    .font(.system(size: 14))
-//                    .foregroundColor(Color("abutua"))
-//                    .padding(5)
-//                    .background(Color("gray"))
-//                    .textContentType(.givenName)
-//
-//
-//                    .multilineTextAlignment(.center)
-//                    .font(.system(size: 12))
-//                    .frame(width: 191, height: 33)
-//                    .cornerRadius(8)
+                ForEach(0..<participantCount, id: \.self) { index in
+                                    TextField("Player \(index + 1)", text: $playerNames[index])
+                                        .font(.system(size: 14))
+                                        .foregroundColor(Color("abutua"))
+                                        .padding(5)
+                                        .background(Color("gray"))
+                                        .textContentType(.givenName)
+                                        .multilineTextAlignment(.center)
+                                        .frame(width: 191, height: 33)
+                                        .cornerRadius(8)
+                                }
                 
                 // play button
                 Button {
                     
                 } label: {
-                    NavigationLink(destination: EmojiView())
+                    NavigationLink(destination: players_popup(player:participantCount))
                     {
                         HStack{
                             Image(systemName: "play.fill")
