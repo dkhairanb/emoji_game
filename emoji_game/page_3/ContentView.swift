@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let emoji : [String]
 
     @State private var capturedImage: UIImage? = nil
     @State private var isCustomCameraViewPresented = false
@@ -19,29 +20,35 @@ struct ContentView: View {
                 
                 
                 //tagline
-                Text("Tagline")
+                Text("Pose Like Your Emoji🥳")
                     .font(.custom("SFPro", size: 20))
                 Spacer()
                 
                 //Emoji list
                 HStack{
-                    Text("🥷")
-                        .font(.system(size: 46))
-                        .padding(22)
-                    Spacer()
-                    Text("🌏")
-                        .font(.system(size: 46))
-                        .padding(22)
-
-                    Spacer()
-                    Text("🥴")
-                        .font(.system(size: 46))
-                        .padding(22)
-
-                    Spacer()
-                    Text("🤨")
-                        .font(.system(size: 46))
-                        .padding(22)
+                    ForEach(1..<emoji.count+1){number in
+                        Text("\(emoji[number-1])")
+                            .font(.system(size: 46))
+                            .padding(22)
+                        Spacer()
+                    }
+//                    Text("🥷")
+//                        .font(.system(size: 46))
+//                        .padding(22)
+//                    Spacer()
+//                    Text("🌏")
+//                        .font(.system(size: 46))
+//                        .padding(22)
+//
+//                    Spacer()
+//                    Text("🥴")
+//                        .font(.system(size: 46))
+//                        .padding(22)
+//
+//                    Spacer()
+//                    Text("🤨")
+//                        .font(.system(size: 46))
+//                        .padding(22)
 
                 }
                 Spacer()
@@ -107,6 +114,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(emoji: [])
     }
 }

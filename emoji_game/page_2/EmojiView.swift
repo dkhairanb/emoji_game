@@ -36,7 +36,7 @@ struct EmojiView: View {
     @State private var timeRemainingTopic = 59
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    private let name : [String] = ["Ugik", "Dhil", "Aysha", "Yanto"]
+    let name : [String]
     @State var answer = [String]()
     @State private var index: Int = 0;
     @State private var indexSpeak: Int = 0;
@@ -150,6 +150,6 @@ struct EmojiView: View {
 
 struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiView()
+        EmojiView(name: [])
     }
 }

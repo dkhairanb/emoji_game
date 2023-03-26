@@ -92,7 +92,7 @@ struct lobby_popup: View {
                 Button {
                     
                 } label: {
-                    NavigationLink(destination: players_popup(player:participantCount))
+                    NavigationLink(destination: EmojiView(name: Array(playerNames[0..<participantCount])))
                     {
                         HStack{
                             Image(systemName: "play.fill")
