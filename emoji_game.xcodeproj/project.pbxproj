@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D0AADD329D0703800F3981B /* players_popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AADD229D0703800F3981B /* players_popup.swift */; };
 		8D1DFF0529C95279000644E8 /* emoji_gameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0429C95279000644E8 /* emoji_gameApp.swift */; };
 		8D1DFF0729C95279000644E8 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0629C95279000644E8 /* EmojiView.swift */; };
 		8D1DFF0929C9527A000644E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1DFF0829C9527A000644E8 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D0AADD229D0703800F3981B /* players_popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = players_popup.swift; sourceTree = "<group>"; };
 		8D0AADD429D07FC200F3981B /* emoji-game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "emoji-game-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8D1DFF0129C95279000644E8 /* emoji_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emoji_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1DFF0429C95279000644E8 /* emoji_gameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emoji_gameApp.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			children = (
 				BCAEA79A29CECB4A005ECBDA /* home_page.swift */,
 				BCAEA7A029CECC22005ECBDA /* lobby_popup.swift */,
-				8D0AADD229D0703800F3981B /* players_popup.swift */,
 			);
 			path = page_1;
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 				8D1DFF0529C95279000644E8 /* emoji_gameApp.swift in Sources */,
 				8D645F6429CD63CE0061B833 /* ContentView.swift in Sources */,
 				BCAEA7A129CECC22005ECBDA /* lobby_popup.swift in Sources */,
-				8D0AADD329D0703800F3981B /* players_popup.swift in Sources */,
 				8D645F6229CD635C0061B833 /* CustomCameraView.swift in Sources */,
 				8D645F5E29CD62F20061B833 /* CameraService.swift in Sources */,
 				8D645F6029CD63440061B833 /* CameraView.swift in Sources */,
