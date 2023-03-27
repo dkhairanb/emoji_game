@@ -41,7 +41,7 @@ struct EmojiView: View {
     @State private var index: Int = 0;
     @State private var indexSpeak: Int = 0;
     
-    let topic : [String] = ["Albert Einstein", "UFO", "Apple Academy", "Animation","Indonesia"]
+    let topic : [String] = ["Albert Einstein", "UFO", "Apple Academy", "Animation", "Indonesia", ]
     @State var topics = ""
     
     private let adaptiveColumns = [
@@ -58,7 +58,7 @@ struct EmojiView: View {
             
             VStack {
                 if(index < name.count) {
-                    Text("Emojis: Your Secret Weapon for Expressive Communication!🥳").foregroundColor(Color("shadowColor")).padding(.top, 90)
+                    Text("Pick an Emoji!🥳").foregroundColor(Color("shadowColor")).padding(.top, 90)
                 } else {
                     Text("Tell Us About Your Emoji😝").foregroundColor(Color("shadowColor")).padding(.top, 90)
                 }

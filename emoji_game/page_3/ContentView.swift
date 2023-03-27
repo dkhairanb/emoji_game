@@ -33,23 +33,6 @@ struct ContentView: View {
                             .padding(22)
                         Spacer()
                     }
-//                    Text("🥷")
-//                        .font(.system(size: 46))
-//                        .padding(22)
-//                    Spacer()
-//                    Text("🌏")
-//                        .font(.system(size: 46))
-//                        .padding(22)
-//
-//                    Spacer()
-//                    Text("🥴")
-//                        .font(.system(size: 46))
-//                        .padding(22)
-//
-//                    Spacer()
-//                    Text("🤨")
-//                        .font(.system(size: 46))
-//                        .padding(22)
 
                 }
                 Spacer()
