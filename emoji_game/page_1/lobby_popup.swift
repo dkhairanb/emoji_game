@@ -75,7 +75,8 @@ struct lobby_popup: View {
                             .padding(20)
                     }
                 }
-
+                
+                Text("Enter Players Name").padding(.top, 20)
                 ForEach(0..<participantCount, id: \.self) { index in
                                     TextField("Player \(index + 1)", text: $playerNames[index])
                                         .font(.system(size: 14))

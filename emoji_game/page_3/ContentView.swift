@@ -27,6 +27,7 @@ struct ContentView: View {
                 //Emoji list
                 HStack{
                     ForEach(1..<emoji.count+1){number in
+                        Spacer()
                         Text("\(emoji[number-1])")
                             .font(.system(size: 46))
                             .padding(22)
