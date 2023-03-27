@@ -25,9 +25,17 @@ struct home_page: View {
                 
                 // logo
                 VStack {
-                    Rectangle()
-                        .frame(width: 120, height: 120)
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 120, height: 120)
                         .foregroundColor(.white)
+                        .cornerRadius(8)
+                        
+                        Image("emojique_logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 120)
+                    }
                     
                     // button
 
